@@ -1,0 +1,113 @@
+/* ----------------------
+    Landing Page
+                          
+  ======================
+    Global Styles
+  =======================*/
+html, body{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #9900cc 0%, #3366ff 100%), url(https://wallpaperaccess.com/full/1333419.jpg) no-repeat center center fixed;
+    background-blend-mode: screen;
+    font-family: 'Archivo Black', sans-serif;
+    color:whitesmoke ;
+    text-shadow:4px 4px 4px #2B3036;
+}
+
+
+/* =========================
+    Layout
+    ========================*/
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.head{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 4rem;
+    min-inline-size: 10%;
+}
+
+.buffer{
+    margin-top: 0px;
+    margin-bottom: 2.5px;
+    width: 50%;
+    height: 2px;
+    background-color: thistle;
+}
+
+.Soc_Med{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5px ;
+    padding-bottom: 2.5px;
+}
+
+
+.Soc_Med img {
+    min-inline-size: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.greeting{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.linked-image{
+    float:inline-end;
+    width: 5%;
+    height: 5%;
+    margin: 20px;
+}
+
+.linked-image:hover, .linked-image:focus{
+    transition:all 0.1s;
+    padding: 2px;
+    border-bottom: 3px solid whitesmoke;
+    margin-bottom: auto;
+    outline:none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    height: 320px;
+    background: linear-gradient(to top, #0099ff 0%, #660066 100%);
+}
+
+.menu h2{
+    font-weight: bolder ;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn{
+    font-size: 1.5em;
+    width: 90%;
+    margin: auto;
+    color:whitesmoke ;
+    text-shadow:4px 4px 4px #2B3036;
+    text-decoration: none;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+/*---------------------------------------------------*/

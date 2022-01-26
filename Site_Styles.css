@@ -81,7 +81,13 @@ html, body{
     justify-content: center;
     width: 560px;
     height: 320px;
-    background: linear-gradient(to top, #0099ff 0%, #660066 100%);
+    border: 2px solid aliceblue;
+    border-radius: 100px;
+}
+
+.menu:hover{
+    transform: scale(1.05);
+    transition: all 1s;
 }
 
 .menu h2{
@@ -99,6 +105,7 @@ html, body{
     color:whitesmoke ;
     text-shadow:4px 4px 4px #2B3036;
     text-decoration: none;
+    border-radius: 100px;
 }
 
 

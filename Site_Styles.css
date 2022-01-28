@@ -73,7 +73,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
 }
 
 .menu {
@@ -123,14 +123,14 @@ body{
 
 
 /* =========================
-    Footer
+    Middle Menu
     ========================*/
 
 footer {
     border:1px solid #2A2B2A ;
     background: linear-gradient(to bottom, #2A2B2A 0%, #fe5f50 100%);
-    display: block;
     align-items: center;
+    display: block;
 }
 
 footer p{

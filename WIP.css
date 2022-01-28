@@ -1,6 +1,4 @@
 html, body {
-    height: 100%;
-    width: 100%;
     font-family: Inconsolata, sans-serif;
     margin-top: 20px;
     background:#3A2449;
@@ -11,6 +9,30 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100%;
+	padding-bottom: 20px;
+}
+
+.go-back{
+	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.go-back a{
+	border: 5px solid whitesmoke; 
+	margin: 20px;
+	padding: 10px;
+	border-radius: 100px;
+	color:whitesmoke;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+.go-back:hover, .go-back:active, .go-back:focus
+{
+	color:whitesmoke;
+	text-decoration: none;
 }
 
 .robots {
@@ -18,7 +40,6 @@ html, body {
 	flex:wrap;
 	justify-content: center;
     align-items: center;
-  
 }
 
 .head, 
@@ -86,7 +107,7 @@ html, body {
 	transition: all 1s;
 } 
 
-.torso:hover{
+.torso:active, .torso:focus, .torso:active:focus{
 	transform: scale(1.05);
 }
 
@@ -96,10 +117,14 @@ html, body {
 	display: flex;
 	justify-content: center;
 	width: 200px; 
-	height: 200px;
-	margin: 0 auto;
-
+	height: 150px;
+	margin: auto;
 } 
+
+.lower_body .left_leg, .lower_body .right_leg
+{
+	justify-content: center;
+}
 
 .left_leg, .right_leg {
 	background: #3366ff; 

@@ -4,117 +4,139 @@
   ======================
     Global Styles
   =======================*/
-html, body{
-    position:relative;
-    width:100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #9900cc 0%, #3366ff 100%), url(https://wallpaperaccess.com/full/1333419.jpg) no-repeat center center fixed;
-    background-blend-mode: screen;
+body{
+
     font-family: 'Archivo Black', sans-serif;
     color:whitesmoke ;
     text-shadow:4px 4px 4px #2B3036;
+    margin: 0 auto;
 }
 
 
 /* =========================
-    Layout
+    Banner
     ========================*/
-.row{
-    display: flex;
-    justify-content: center;
+.zone{
+    background: linear-gradient(to top, #2A2B2A 0%, #fe5f50 100%);
 }
 
-.head{
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 4rem;
-    min-inline-size: 10%;
+
+.banner{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
 }
 
-.buffer{
-    margin-top: 0px;
-    margin-bottom: 2.5px;
+.banner .head{
+    text-align: center;
+    justify-self: center;
+}
+
+.head h1{
+    font-size: 3.5rem;
+}
+
+.social_media{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+}
+
+.banner .social_media .linked-image{
+    align-self: center;
+    justify-self: center;
     width: 50%;
-    height: 2px;
-    background-color: thistle;
+    color: white;
+    text-decoration: none;
 }
 
-.Soc_Med{
+.linked-image img{
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2.5px ;
-    padding-bottom: 2.5px;
+}
+
+.linked-image:focus{
+    outline: none;
 }
 
 
-.Soc_Med img {
-    min-inline-size: 50px;
-    width: 100%;
-    height: 100%;
-}
-
-.greeting{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.linked-image{
-    float:inline-end;
-    width: 5%;
-    height: 5%;
-    margin: 20px;
-}
-
-.linked-image:hover, .linked-image:focus{
+.linked-image img:hover, .linked-image:focus{
+    align-self: center;
     transition:all 0.1s;
-    padding: 2px;
+    padding-bottom: auto;
     border-bottom: 3px solid whitesmoke;
-    margin-bottom: auto;
-    outline:none;
+}
+
+
+/* =========================
+    Middle Menu
+    ========================*/
+.middle{
+    background: #2A2B2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 
 .menu {
     display: flex;
     justify-content: center;
-    width: 560px;
-    height: 320px;
+    width: 60vw;
+    height: 50vh;
     border: 2px solid aliceblue;
-    border-radius: 100px;
+    border-radius: 50px;
+    text-align: center;
 }
 
-.menu:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-}
 
 .menu h2{
     font-weight: bolder ;
-    width: auto;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
+
 }
 
 
-.btn{
+.btn-primary{
     font-size: 1.5em;
-    width: 90%;
+    width: 70%;
     margin: auto;
     color:whitesmoke ;
+    background: linear-gradient(to left, #fe5f50 0%,#2A2B2A 100%) ;
+    border: 2px solid #2A2B2A;
     text-shadow:4px 4px 4px #2B3036;
     text-decoration: none;
     border-radius: 100px;
 }
 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    border: 2px solid #454955;
+}
+
+.btn:focus, .btn-primary:active, .btn-primary:active:focus{
+    box-shadow: 0 0 0 0.25rem #454955;
+}
+
+.link-button {
+    outline: none;
+}
+
+
+/* =========================
+    Footer
+    ========================*/
 
 footer {
-    width: 100%;
-    height: auto;
+    border:1px solid #2A2B2A ;
+    background: linear-gradient(to bottom, #2A2B2A 0%, #fe5f50 100%);
+    display: block;
+    align-items: center;
+}
+
+footer p{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    text-align: center;
 }
 /*---------------------------------------------------*/

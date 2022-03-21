@@ -37,7 +37,7 @@ const SocialMedia = () =>{
             <button onFocus={ showEmail} onBlur={ hideEmail } className="linked-image" id="email" href="" target="blank">
                 <img src= { Email }
                     alt= "error"/>
-                  {Dropdownemail===true? email : <></>}  
+            {Dropdownemail===true? email : <></>}  
             </button> 
     
         </div>)

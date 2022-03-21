@@ -15,7 +15,6 @@ const Draggable = ({children}) =>{
 
     const dragStart= (event)=>{
       const {x, y}= event.target.getBoundingClientRect();
-      console.log(event);
       const newPosition= {
         x: event.clientX - x,
         y: event.clientY - y
@@ -23,37 +22,35 @@ const Draggable = ({children}) =>{
       position= newPosition;
     }
   
-      const dragEnd= (event)=>{
-        event.target.style.position= "absolute";
-        const {clientHeight, clientWidth} = event.target;
-        const {outerWidth, outerHeight}= event.view;
-        const {pageX, pageY} = event;
-        const {x, y} = position;
-        const element= event.target;
+    const dragEnd= (event)=>{
+      event.target.style.position= "absolute";
+      const {clientHeight, clientWidth} = event.target;
+      const {outerWidth, outerHeight}= event.view;
+      const {pageX, pageY} = event;
+      const {x, y} = position;
+      const element= event.target;
 
-        const spaceX={
-          screen: outerWidth,
-          target: clientWidth,
-        }
-
-        const spaceY={
-          screen: outerHeight,
-          target: clientHeight,
-        }
-
-        // console.log(spaceX, spaceY, x, y);
-
-        const offsetX=  withinViewport(pageX - x, spaceX);
-        const offsetY=  withinViewport(pageY - y, spaceY); 
-
-        element.style.top = offsetY + "px";
-        element.style.left= offsetX + "px";
+      const spaceX={
+        screen: outerWidth,
+        target: clientWidth,
       }
-    
-      document.addEventListener("dragover", function(event) {
-        event.preventDefault();
-        event.target.style.background="opacity=0";
-      });
+
+      const spaceY={
+        screen: outerHeight,
+        target: clientHeight,
+      }
+
+      const offsetX=  withinViewport(pageX - x, spaceX);
+      const offsetY=  withinViewport(pageY - y, spaceY); 
+
+      element.style.top = offsetY + "px";
+      element.style.left= offsetX + "px";
+    }
+  
+    document.addEventListener("dragover", function(event) {
+      event.preventDefault();
+      event.target.style.background="opacity=0";
+    });
 
     return(
         <div id="Drag" onDragStart= {dragStart} onDragEnd={dragEnd} draggable="true"  style={{cursor:"grab"}}> 

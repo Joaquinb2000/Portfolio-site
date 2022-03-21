@@ -1,6 +1,7 @@
 
 #scroll {
     scrollbar-width: thin;
+    margin: 50px 10px 50px 10px;
     scrollbar-color: rgb(70, 70, 92) rgb(44, 40, 32);
   }
 

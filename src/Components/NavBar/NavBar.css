@@ -1,0 +1,36 @@
+.banner{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(to top, #2A2B2A 0%, #fe5f50 100%);
+}
+
+.banner h1{
+    margin-top: 10px;
+}
+
+.head {
+    font-size: 1rem;
+}
+
+.go-back{
+    color: aliceblue;
+    background: linear-gradient(to left, #2A2B2A 0%, #5a5b5a 100%);
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border-radius: 10px 0px 0px 10px;
+    border-style:double;
+}
+
+.go-back:hover, .go-back:focus, .go-back:active {
+    border: 2px solid #fe5f50;
+}
+
+.go-back:focus, .go-back:active, .go-back:active:focus{
+    box-shadow: 0 0 0 0.25rem #454955;
+}
+
+

@@ -1,0 +1,13 @@
+body{
+  font-family: 'Archivo Black', sans-serif;
+  color:whitesmoke ;
+  margin: 0 auto;
+  background: #2A2B2A;
+  text-shadow:4px 4px 4px #2B3036;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

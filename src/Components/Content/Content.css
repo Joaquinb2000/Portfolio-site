@@ -1,0 +1,56 @@
+.middle{
+    background: #2A2B2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B3036;
+    text-shadow:4px 4px 4px #2B3036;
+    height: 70vh;
+}
+
+.menu {
+    border: 2px solid aliceblue;
+    border-radius: 50px;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menu h2{
+    font-weight: bolder ;
+    display: flex;
+}
+
+.menu-button{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-primary{
+    font-size: 1.5em;
+    width: 40vw;
+    padding:10px;
+    margin: 10px;
+    color:whitesmoke ;
+    background: linear-gradient(to left, #fe5f50 0%,#2A2B2A 100%) ;
+    border: 2px solid #2A2B2A;
+    text-shadow:4px 4px 4px #2B3036;
+    text-decoration: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    border: 2px solid #454955;
+}
+
+.btn:focus, .btn-primary:active, .btn-primary:active:focus{
+    box-shadow: 0 0 0 0.25rem #454955;
+}
+
+.menu-button a{
+    outline:none;
+}
+

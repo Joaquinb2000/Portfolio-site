@@ -1,0 +1,43 @@
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 5px;
+}
+
+.linked-image{
+    color: white;
+    background: none;
+    border: none;
+    margin: 0px 10px 0px 10px;
+}
+
+.linked-image img{
+    width: 60px;
+    height: 60px;
+}
+
+.linked-image:focus{
+    outline: none;
+}
+
+.linked-image:hover{
+    transition:all 0.1s;
+    border-bottom: 5px solid whitesmoke;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+}
+
+.email p{
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 10px;
+}

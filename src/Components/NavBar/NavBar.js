@@ -8,16 +8,16 @@ const Navbar = ({route, click}) => {
         return(//Regular homepage
             <div className="banner">
                 <div className= "head">{
-                    route!==2 
+                    route!==2
                     ?<h1 className= "">
                         <strong>Hello, I'm Joaquin </strong>
                     </h1>
                     : <button onClick={click} id="0" className="go-back grow">Go Back</button>}
-                </div> 
+                </div>
                 <SocialMedia/>
             </div>
         )
-        
+
 
     return( //Draggable version
         <div className="banner">
@@ -26,11 +26,9 @@ const Navbar = ({route, click}) => {
                     <h1 className= "tc">
                         <strong>Now you can drag elements around! </strong>
                     </h1>
-                </div>    
-            </Draggable> 
-            <Draggable>
-                <SocialMedia/>
-            </Draggable>  
+                </div>
+            </Draggable>
+            <SocialMedia draggable/>
         </div>
     )
 }

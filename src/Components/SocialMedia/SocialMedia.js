@@ -23,28 +23,28 @@ const SocialMedia = ({draggable}) =>{
                  </div>
 
     const showEmail= (event)=>{
+        displayEmail(true);
         event.preventDefault()
         event.stopPropagation()
-        displayEmail(true);
     }
 
     const hideEmail=()=>{
         displayEmail(false);
     }
 
-    const emailDisplay = (
-        <a id="email" onFocus={ showEmail } onBlur={ hideEmail } className="linked-image" href="#" target="blank">
+    const emailIcon = (
+        <button id="email" onFocus={ showEmail } onBlur={ hideEmail } className="linked-image" >
             <img src= { Email } alt= "error"/>
             {Dropdownemail=== true ? email : <></>}
-        </a>
+        </button>
     )
 
     return(
             <div className="social_media">
                 {children}
                 { !draggable
-                    ? emailDisplay
-                    : <Draggable>{emailDisplay}</Draggable>
+                    ? emailIcon
+                    : <Draggable>{emailIcon}</Draggable>
                 }
             </div>)
 

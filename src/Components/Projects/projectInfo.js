@@ -9,7 +9,7 @@ const projectInfo= [
     },
     {
         name: "Message Me",
-        description: "Real time chatroom application, users can create and edit chatroom members and title",
+        description: "Real time chatroom application, users can create and edit chatroom members and title.",
         img: "https://i.imgur.com/G3GAG43.png",
         used: "Ruby on Rails, PostgreSQL, Redis, Bootstrap",
         link: "https://messageme-jb.fly.dev/"
@@ -23,7 +23,7 @@ const projectInfo= [
     },
     {
         name: "Photo-App",
-        description: "Image sharing site",
+        description: "Image sharing site.",
         img: "https://imgur.com/rjKXot1.png",
         used: "Ruby on Rails, Auth with Devise, image upload handled with AWS S3 bucket, implemented subcription plan payments with Stripe API.",
         link: "https://photo-app.fly.dev/"

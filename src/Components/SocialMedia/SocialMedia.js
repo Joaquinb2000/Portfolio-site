@@ -35,7 +35,7 @@ const SocialMedia = ({draggable}) =>{
     const emailIcon = (
         <button id="email" onFocus={ showEmail } onBlur={ hideEmail } className="linked-image" >
             <img src= { Email } alt= "error"/>
-            {Dropdownemail=== true ? email : <></>}
+            {Dropdownemail=== true && !draggable ? email : <></>}
         </button>
     )
 
